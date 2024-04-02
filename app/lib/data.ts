@@ -5,10 +5,38 @@ import {
   InvoiceForm,
   InvoicesTable,
   LatestInvoiceRaw,
-  User,
   Revenue,
+  User,
 } from './definitions';
 import { formatCurrency } from './utils';
+
+export const navLinks = [
+  { name: 'Study Programs', path: '/' },
+  {
+    name: 'Organization',
+    path: '/organization',
+  },
+  {
+    name: 'Contact Us',
+    path: '/contactus',
+  },
+  {
+    name: 'Apply Now',
+    path: '/applynow',
+  },
+];
+
+export const subNavLinks = [
+  { name: 'Quick Access', path: '/' },
+  {
+    name: 'News & Events',
+    path: '/',
+  },
+  {
+    name: 'Research',
+    path: '/contactus',
+  },
+];
 
 export async function fetchRevenue() {
   // Add noStore() here to prevent the response from being cached.
@@ -18,8 +46,8 @@ export async function fetchRevenue() {
     // Artificially delay a response for demo purposes.
     // Don't do this in production :)
 
-    // console.log('Fetching revenue data...');
-    // await new Promise((resolve) => setTimeout(resolve, 3000));
+    console.log('Fetching revenue data...');
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
     const data = await sql<Revenue>`SELECT * FROM revenue`;
 

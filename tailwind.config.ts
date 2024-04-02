@@ -17,6 +17,8 @@ const config: Config = {
           500: '#0070F3',
           600: '#2F6FEB',
         },
+        'vgu-orange': 'var(--vgu-orange)',
+        'vgu-darkblue': 'var(--vgu-darkblue)',
       },
     },
     keyframes: {
