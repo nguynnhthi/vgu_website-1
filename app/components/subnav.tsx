@@ -13,7 +13,7 @@ export default function SubNav() {
             <Link href={path}>
               <li
                 key={name}
-                className="nav-links link-underline align-items-middle flex cursor-pointer px-4 font-medium capitalize text-blue-500 text-white duration-200 hover:scale-105"
+                className="nav-links link-underline align-items-middle capitalizetext-white flex cursor-pointer px-4 font-medium duration-200 hover:scale-105"
               >
                 {name}
               </li>
