@@ -5,6 +5,8 @@
 :root {
   --vgu-orange: #FF7A00;
   --vgu-darkblue: #0D223F;
+  --vgu-yellow: #FCD020;
+  
 }
 
 input[type='number'] {

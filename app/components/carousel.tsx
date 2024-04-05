@@ -5,50 +5,6 @@ export default function Carousel() {
       className="relative w-full"
       data-carousel="slide"
     >
-      {/* <div className="relative h-96 overflow-hidden md:h-96">
-      
-        <div className=" duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="/vgu_0.png"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-            alt="..."
-          />
-        </div>
-
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="/public/vgu_0.png"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-            alt="..."
-          />
-        </div>
- 
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="/public/vgu_0.png"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-            alt="..."
-          />
-        </div>
-       
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="/public/vgu_0.png"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-            alt="..."
-          />
-        </div>
-     
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="./../../public/vgu_0.png"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-            alt="..."
-          />
-        </div>
-      </div> */}
-
-      {/* <div className=" relative h-96 overflow-hidden md:h-96"> */}
       <div className="md:h-200">
         {/* <!-- Item 1 --> */}
         <div className="duration-700 ease-in-out" data-carousel-item>
