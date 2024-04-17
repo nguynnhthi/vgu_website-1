@@ -5,11 +5,10 @@ export default function Footer() {
     <div>
       <footer className="bg-vgu-darkblue py-8 text-white">
         <div className="mx-auto grid w-8/12 grid-cols-2 place-items-center gap-6 ">
-          <div className="w-full text-center md:text-left">
-            <img src="" alt="" />
+          <div className="w-full flex justify-center">
             <Image
               src="/vgu-white-logo.jpeg"
-              width={400}
+              width={250}
               height={300}
               alt="Placeholder image"
               className="card-image block"

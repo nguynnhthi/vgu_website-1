@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { sans } from '../ui/fonts';
-
+<script src="../path/to/countup.min.js"></script>
 export default function VguInFigures() {
   return (
     <div className={`${sans.className} mt-12`}>
@@ -44,5 +44,6 @@ export default function VguInFigures() {
         </div>
       </div>
     </div>
+    
   );
 }

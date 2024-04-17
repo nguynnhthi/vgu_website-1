@@ -11,13 +11,11 @@ const config: Config = {
       gridTemplateColumns: {
         '13': 'repeat(13, minmax(0, 1fr))',
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
 
       colors: {
-        blue: {
-          400: '#2589FE',
-          500: '#0070F3',
-          600: '#2F6FEB',
-        },
         'vgu-orange': 'var(--vgu-orange)',
         'vgu-darkblue': 'var(--vgu-darkblue)',
       },
@@ -28,8 +26,13 @@ const config: Config = {
           transform: 'translateX(100%)',
         },
       },
+      'infinite-scroll': {
+        from: { transform: 'translateX(0)' },
+        to: { transform: 'translateX(-100%)' },
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],
 };
+
 export default config;

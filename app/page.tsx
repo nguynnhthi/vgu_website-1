@@ -1,4 +1,4 @@
-import { default as Carousel } from './components/carousel';
+import { default as Carousel } from './home/carousel';
 import CtaSection from './components/ctasection';
 import Footer from './components/footer';
 import { default as Header } from './components/header';
