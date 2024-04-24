@@ -31,7 +31,7 @@ export default function VguToday() {
                 width={300}
                 height={300}
                 alt="Placeholder image"
-                className="card-image block w-full  duration-200 hover:scale-105"
+                className="card-image block w-full duration-200 hover:scale-105"
               />
             </div>
 
@@ -56,7 +56,7 @@ export default function VguToday() {
                 width={300}
                 height={300}
                 alt="Placeholder image"
-                className="card-image block w-full  duration-200 hover:scale-105"
+                className="card-image block w-full duration-200 hover:scale-105"
               />
             </div>
 
@@ -82,7 +82,7 @@ export default function VguToday() {
                 width={300}
                 height={300}
                 alt="Placeholder image"
-                className="card-image block w-full  duration-200 hover:scale-105"
+                className="card-image block w-full duration-200 hover:scale-105"
               />
             </div>
 

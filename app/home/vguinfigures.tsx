@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import { sans } from '../ui/fonts';
-<script src="../path/to/countup.min.js"></script>
+<script src="../path/to/countup.min.js"></script>;
 export default function VguInFigures() {
   return (
     <div className={`${sans.className} mt-12`}>
       <div className="mb-12">
-        <h1 className="text-vgu-orange text-center text-4xl font-extrabold uppercase leading-none tracking-tight md:text-5xl lg:text-6xl">
+        <h1 className="text-center text-4xl font-extrabold uppercase leading-none tracking-tight text-vgu-orange md:text-5xl lg:text-6xl">
           VGU{' '}
-          <mark className="bg-vgu-orange rounded px-2 text-white">
+          <mark className="rounded bg-vgu-orange px-2 text-white">
             In Figures
           </mark>{' '}
         </h1>
@@ -24,26 +24,23 @@ export default function VguInFigures() {
         </div>
         <div className="col-span-2 mx-6 flex flex-col justify-between">
           <div>
-            <p className="from-vgu-orange to-vgu-yellow bg-gradient-to-r bg-clip-text text-7xl text-transparent">
-              1700
-            </p>
+            <p className="text-6xl font-semibold text-vgu-darkblue">1700</p>
             <p className="text-xl">approximate number of students</p>
           </div>
           <div>
-            <p className="text-vgu-darkblue text-6xl">200</p>
+            <p className="text-6xl font-semibold text-vgu-darkblue">200</p>
             <p>millions of dollars investment in infrastructure</p>
           </div>
           <div>
-            <p className="text-vgu-darkblue text-6xl">71</p>
+            <p className="text-6xl font-semibold text-vgu-darkblue">71</p>
             <p>technical laboratories</p>
           </div>
           <div>
-            <p className="text-vgu-darkblue text-6xl">20</p>
+            <p className=" text-6xl font-semibold text-vgu-darkblue">20</p>
             <p>study programs</p>
           </div>
         </div>
       </div>
     </div>
-    
   );
 }

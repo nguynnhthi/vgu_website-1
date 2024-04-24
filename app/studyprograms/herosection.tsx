@@ -1,6 +1,5 @@
 import { sans } from '../ui/fonts';
-import { Tabs } from "flowbite-react";
-export default function CtaSection() {
+export default function HeroSection() {
     return (
 
         <div className={`${sans.className}`}>
@@ -30,9 +29,9 @@ export default function CtaSection() {
             </div>
             {/* Search bar */}
 
-            <div className='mb-20 '>
+            {/* <div className='mb-20'>
                 <form className=" bg-vgu-darkblue py-2 mx-auto rounded-lg border flex flex-row w-7/12 justify-around">
-                    {/* <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label> */}
+                    <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
 
                     <div className='basis-1/4 '>
                         <select id="countries" name='countries' required className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
@@ -61,16 +60,8 @@ export default function CtaSection() {
                             <option value="DE">Germany</option>
                         </select>
                     </div>
-
                 </form>
-
-
-
-            </div>
-
-            {/* Tabs with content */}
-
-
+            </div> */}
         </div>
     );
 }

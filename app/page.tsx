@@ -1,23 +1,7 @@
-import { default as Carousel } from './home/carousel';
-import CtaSection from './components/ctasection';
-import Footer from './components/footer';
-import { default as Header } from './components/header';
-import StudyPrograms from './components/studyprograms';
-import VguInFigures from './components/vguinfigures';
-import VguPartners from './components/vgupartners';
-import VguToday from './components/vgutoday';
-
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col">
-      <Header />
-      <Carousel />
-      <StudyPrograms />
-      <VguInFigures />
-      <VguToday />
-      <VguPartners />
-      <CtaSection />
-      <Footer />
+
 
       {/* <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
