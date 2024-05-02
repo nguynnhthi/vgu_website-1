@@ -11,7 +11,8 @@ import {
 import { formatCurrency } from './utils';
 
 export const navLinks = [
-  { name: 'Study Programs', path: '/' },
+  { name: 'Study Programs', path: '/studyprograms' },
+
   {
     name: 'Organization',
     path: '/organization',

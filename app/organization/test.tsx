@@ -10,7 +10,7 @@ import {
 } from "@material-tailwind/react";
 
 
-export default function ProgramTabs() {
+export default function Test() {
     const [activeTab, setActiveTab] = React.useState("html");
 
 
@@ -138,11 +138,7 @@ export default function ProgramTabs() {
                                     </div>
                                 ))}
                             </div>
-                            <div id="viewAllBtn">
-                                <button className=" mt-10 mx-auto w-auto text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue text-xl block rounded-full bg-white px-5 py-2 font-extrabold uppercase outline outline-1 duration-300 hover:text-white ">
-                                    View all programs
-                                </button>
-                            </div>
+
                         </TabPanel>
 
                         <TabPanel value="master">
@@ -173,11 +169,7 @@ export default function ProgramTabs() {
                                     </div>
                                 ))}
                             </div>
-                            <div id="viewAllBtn">
-                                <button className=" mt-10 mx-auto w-auto text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue text-xl block rounded-full bg-white px-5 py-2 font-extrabold uppercase outline outline-1 duration-300 hover:text-white ">
-                                    View all programs
-                                </button>
-                            </div>
+
                         </TabPanel>
                     </TabsBody>
                 </Tabs>

@@ -10,7 +10,7 @@ export default function VGULogo() {
       {/* <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" / */}
       {/* <Link href={"/dashboard"}> <p className="text-[44px]">Acme</p> </Link> */}
 
-      <Link href={'/dashboard'}>
+      <Link href={'/home'}>
         {' '}
         <Image
           src="/vgu-logo.png"

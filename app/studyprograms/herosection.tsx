@@ -5,12 +5,12 @@ export default function HeroSection() {
         <div className={`${sans.className}`}>
             <div className="relative max-w-full mb-8">
                 <img
-                    src="/students.jpg"
+                    src="/vgu_students.jpg"
                     className="w-full h-full brightness-75 filter"
                     alt="VGU Campus Image"
                 />
 
-                {/* <video src="https://www.youtube.com/watch?v=aKexZlnITqg"></video> */}
+
                 <div className=" w-1/2 absolute inset-0 py-16 text-center mx-auto my-auto h-auto">
                     <h1 className=" mb-8 text-vgu-orange text-center text-4xl font-extrabold uppercase leading-none tracking-tight md:text-5xl lg:text-6xl">
                         EXPLORE{' '}

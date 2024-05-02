@@ -16,7 +16,7 @@ export default function VguInFigures() {
       <div className="mx-auto grid w-8/12 grid-cols-7 ">
         <div className="h-500 relative col-span-5">
           <Image
-            src="/vgulibrary.jpeg"
+            src="/vgu_library.jpeg"
             alt="VGU Library Image"
             width={750}
             height={750}

@@ -2,11 +2,11 @@
 import React from "react";
 import { sans } from '../ui/fonts';
 import Link from 'next/link';
-export default function Test() {
+export default function InquiryForm() {
     return (
         <div className={`${sans.className}`}>
             {/* <!-- component --> */}
-            <div className="flex justify-center w-9/12 items-center mx-auto h-screen bg-white">
+            <div className="flex justify-center w-9/12 items-center mx-auto h-fit pt-16 pb-12 bg-white">
                 {/* <!-- COMPONENT CODE --> */}
                 <div className="container mx-auto my-4 px-4 lg:px-20">
                     {/* Left form */}
@@ -25,8 +25,6 @@ export default function Test() {
                             <input className="w-full bg-gray-100 text-vgu-darkblue mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                                 type="number" placeholder="Phone*" />
                         </div>
-
-
 
 
                         <div className="my-4">
@@ -103,14 +101,7 @@ export default function Test() {
                 {/* <!-- COMPONENT CODE --> */}
             </div>
 
-            {/* <!-- BUY ME A PIZZA AND HELP SUPPORT OPEN-SOURCE RESOURCES --> */}
-            <div className="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
-                <div>
-                    <a title="Buy me a pizza" href="https://www.buymeacoffee.com/Dekartmc" target="_blank" className="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
-                        <img className="object-cover object-center w-full h-full rounded-full" src="https://img.icons8.com/emoji/48/000000/pizza-emoji.png" />
-                    </a>
-                </div>
-            </div>
+
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import '@/app/ui/global.css';
 import { sans } from './ui/fonts';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+
 
 
 export default function RootLayout({
@@ -15,10 +15,7 @@ export default function RootLayout({
       </head>
       <body className={`${sans.className} antialiased`}>{children}
         <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer />
-
       </body>
-
-
     </html>
   );
 }

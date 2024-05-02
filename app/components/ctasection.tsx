@@ -2,7 +2,7 @@ import { sans } from '../ui/fonts';
 
 export default function CtaSection() {
   return (
-    <div className={`${sans.className} mt-12`}>
+    <div className={`${sans.className}`}>
       <div className="relative">
         <img
           src="/vgucampus.jpeg"
