@@ -1,8 +1,6 @@
 import '@/app/ui/global.css';
 import { sans } from './ui/fonts';
 
-
-
 export default function RootLayout({
   children,
 }: {

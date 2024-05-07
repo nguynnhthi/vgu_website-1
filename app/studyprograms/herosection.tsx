@@ -1,5 +1,7 @@
 import { sans } from '../ui/fonts';
 export default function HeroSection() {
+
+
     return (
 
         <div className={`${sans.className}`}>

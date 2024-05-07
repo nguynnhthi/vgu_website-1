@@ -1,15 +1,15 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
 import HeroSection from "./herosection";
-import Organization from "./organization";
+import Organization from "./departments";
 import Test from "./test";
 export default function Page() {
     return (
         <main>
             <Header />
             <HeroSection />
-            <Organization />
-            {/* <Test /> */}
+            {/* <Organization /> */}
+            <Test />
             <Footer />
         </main>
     )

@@ -27,7 +27,7 @@ export default function HeroSection() {
             </div>
 
 
-            {/* Search bar */}
+
 
         </div>
     );

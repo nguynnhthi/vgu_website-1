@@ -27,6 +27,13 @@ export const navLinks = [
   },
 ];
 
+export const organizationLinks = [
+  { name: 'Executive Boards', path: '/organization/executiveboards' },
+
+  { name: 'Falcuties', path: '/organization/falcuties' },
+  { name: 'Central Units', path: '/organization/central units' },
+];
+
 export const subNavLinks = [
   { name: 'Quick Access', path: '/' },
   {

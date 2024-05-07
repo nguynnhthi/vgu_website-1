@@ -5,7 +5,7 @@ export default function CtaSection() {
     <div className={`${sans.className}`}>
       <div className="relative">
         <img
-          src="/vgucampus.jpeg"
+          src="/vgu_campus.jpeg"
           className="h-auto max-w-full brightness-75 filter"
           alt="VGU Campus Image"
         />

@@ -1,179 +1,84 @@
 "use client"
-import React from "react";
+import Image from 'next/image';
 import { sans } from '../ui/fonts';
+import React from "react";
 import {
-    Tabs,
-    TabsHeader,
-    TabsBody,
-    Tab,
-    TabPanel,
+    Button,
+    Dialog,
+    DialogHeader,
+    DialogBody,
+    DialogFooter,
 } from "@material-tailwind/react";
-
-
 export default function Test() {
-    const [activeTab, setActiveTab] = React.useState("html");
 
+    const [size, setSize] = React.useState(null);
 
-    const bachelorProgramsData = [
-        {
-            label: "Computer Science",
-            content: "Explore our undergraduate major in Computer Science.",
-            imageUrl: "/girl1.jpeg"
-        },
-        {
-            label: "Electrical Engineering",
-            content: "Explore our undergraduate major in Electrical Engineering.",
-            imageUrl: "/girl2.jpeg"
-        },
-        {
-            label: "Mechanical Engineering",
-            content: "Explore our undergraduate major in Mechanical Engineering.",
-            imageUrl: "/girl3.jpeg"
-        },
-        {
-            label: "Computer Science",
-            content: "Explore our undergraduate major in Computer Science.",
-            imageUrl: "/girl1.jpeg"
-        },
-        {
-            label: "Electrical Engineering",
-            content: "Explore our undergraduate major in Electrical Engineering.",
-            imageUrl: "/girl2.jpeg"
-        },
-        {
-            label: "Mechanical Engineering",
-            content: "Explore our undergraduate major in Mechanical Engineering.",
-            imageUrl: "/girl3.jpeg"
-        },
+    const handleOpen = (value: any) => setSize(value);
 
-
-    ];
-
-    const masterProgramsData = [
-        {
-            label: "Data Science",
-            value: "ds",
-            content: "Explore our master's program in Data Science.",
-            imageUrl: "/girl3.jpeg"
-        },
-        {
-            label: "Software Engineering",
-            content: "Explore our master's program in Software Engineering.",
-            imageUrl: "/girl1.jpeg"
-        },
-        {
-            label: "Civil Engineering",
-            content: "Explore our master's program in Civil Engineering.",
-            imageUrl: "/girl2.jpeg"
-        },
-        {
-            label: "Data Science",
-            content: "Explore our master's program in Data Science.",
-            imageUrl: "/girl1.jpeg"
-        },
-        {
-            label: "Software Engineering",
-            content: "Explore our master's program in Software Engineering.",
-            imageUrl: "/girl2.jpeg"
-        },
-        {
-            label: "Civil Engineering",
-            content: "Explore our master's program in Civil Engineering.",
-            imageUrl: "/girl3.jpeg"
-        },
-
-    ];
 
     return (
-        <div className={`${sans.className}`}>
-            <div className='w-8/12 mx-auto'>
-                <Tabs value="bachelor">
-                    <TabsHeader className='p-4 text-vgu-darkblue my-6 mx-auto w-9/12'
-                        indicatorProps={{
-                            className: "",
-                        }} >
-                        <Tab value="bachelor" activeClassName="text-vgu-orange"
-                            onClick={() => setActiveTab("bachelor")}
-                            className={activeTab === "bachelor" ? "text-vgu-orange" : ""}>
-                            <p className="text-center text-3xl py-2 font-extrabold uppercase leading-none tracking-tight">
-                                Bachelor Programs
-                            </p>
-                        </Tab>
-
-                        <Tab value="master"
-                            onClick={() => setActiveTab("master")}
-                            className={activeTab === "master" ? "text-vgu-orange" : ""}>
-                            <p className="text-center text-3xl py-2 font-extrabold uppercase leading-none tracking-tight">
-                                Master Programs
-                            </p>
-                        </Tab>
-                    </TabsHeader>
-
-                    <TabsBody>
-                        <TabPanel value="bachelor">
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                {bachelorProgramsData.map(({ label, content, imageUrl }) => (
-                                    <div key={label}>
-                                        <div className="max-w-xs overflow-hidden rounded shadow-lg duration-200 hover:scale-105 ">
-                                            <div className="width-full h-auto">
-                                                <img
-                                                    src={imageUrl}
-                                                    alt="Placeholder image"
-                                                    className="card-imageblock border-b-vgu-orange
-                                                    border-b-2"
-                                                />
-                                            </div>
-                                            <div className="px-6 py-4">
-                                                <div className="mb-2 text-2xl font-bold">{label}</div>
-                                                <p className="text-base text-gray-700">
-                                                    {content}
-                                                </p>
-                                            </div>
-                                            <div className="px-6 py-6 ">
-                                                <span className="text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase outline outline-1 duration-300 hover:text-white ">
-                                                    Learn more
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-
-                        </TabPanel>
-
-                        <TabPanel value="master">
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                {masterProgramsData.map(({ label, content, imageUrl }) => (
-                                    <div key={label}>
-                                        <div className="max-w-xs overflow-hidden rounded shadow-lg duration-200 hover:scale-105">
-                                            <div className="width-full h-auto overflow-hidden">
-                                                <img
-                                                    src={imageUrl}
-                                                    alt="Placeholder image"
-                                                    className="card-image block w-full border-b-vgu-orange
-                                                    border-b-2"
-                                                />
-                                            </div>
-                                            <div className="px-6 py-4">
-                                                <div className="mb-2 text-2xl font-bold">{label}</div>
-                                                <p className="text-base text-gray-700">
-                                                    {content}
-                                                </p>
-                                            </div>
-                                            <div className="px-6 py-6 ">
-                                                <span className="text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase outline outline-1 duration-300 hover:text-white ">
-                                                    Learn more
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-
-                        </TabPanel>
-                    </TabsBody>
-                </Tabs>
-            </div>
-        </div>
+        <div className={`${sans.className} my-12`}>
+            <>
+                <div className="mb-3 flex gap-3">
+                    <Button onClick={() => handleOpen("xs")} variant="gradient">
+                        Open Dialog XS
+                    </Button>
+                    <Button onClick={() => handleOpen("sm")} variant="gradient">
+                        Open Dialog SM
+                    </Button>
+                    <Button onClick={() => handleOpen("md")} variant="gradient">
+                        Open Dialog MD
+                    </Button>
+                </div>
+                <div className="flex gap-3">
+                    <Button onClick={() => handleOpen("lg")} variant="gradient">
+                        Open Dialog LG
+                    </Button>
+                    <Button onClick={() => handleOpen("xl")} variant="gradient">
+                        Open Dialog XL
+                    </Button>
+                    <Button onClick={() => handleOpen("xxl")} variant="gradient">
+                        Open Dialog XXL
+                    </Button>
+                </div>
+                <Dialog
+                    open={
+                        size === "xs" ||
+                        size === "sm" ||
+                        size === "md" ||
+                        size === "lg" ||
+                        size === "xl" ||
+                        size === "xxl"
+                    }
+                    size={size || "md"}
+                    handler={handleOpen}
+                >
+                    <DialogHeader>Its a simple dialog.</DialogHeader>
+                    <DialogBody>
+                        The key to more success is to have a lot of pillows. Put it this way,
+                        it took me twenty five years to get these plants, twenty five years of
+                        blood sweat and tears, and I&apos;m never giving up, I&apos;m just
+                        getting started. I&apos;m up to something. Fan luv.
+                    </DialogBody>
+                    <DialogFooter>
+                        <Button
+                            variant="text"
+                            color="red"
+                            onClick={() => handleOpen(null)}
+                            className="mr-1"
+                        >
+                            <span>Cancel</span>
+                        </Button>
+                        <Button
+                            variant="gradient"
+                            color="green"
+                            onClick={() => handleOpen(null)}
+                        >
+                            <span>Confirm</span>
+                        </Button>
+                    </DialogFooter>
+                </Dialog>
+            </>
+        </div >
     );
 }
