@@ -23,7 +23,7 @@ export default function CtaSection() {
               </button>
 
               <button className=" text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue text-l inline-block rounded-full bg-white px-5 py-2 font-extrabold uppercase outline outline-1 duration-300 hover:text-white ">
-                SOMETHING ELSE
+                CAMPUS TOUR
               </button>
             </div>
           </div>

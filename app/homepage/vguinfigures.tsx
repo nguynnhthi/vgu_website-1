@@ -3,7 +3,7 @@ import { sans } from '../ui/fonts';
 <script src="../path/to/countup.min.js"></script>;
 export default function VguInFigures() {
   return (
-    <div className={`${sans.className} mt-12`}>
+    <div className={`${sans.className}`}>
       <div className="mb-12">
         <h1 className="text-center text-4xl font-extrabold uppercase leading-none tracking-tight text-vgu-orange md:text-5xl lg:text-6xl">
           VGU{' '}
@@ -40,6 +40,16 @@ export default function VguInFigures() {
             <p>study programs</p>
           </div>
         </div>
+      </div>
+
+      <div>
+        <Image
+          src="/dot.jpg"
+          width={100}
+          height={100}
+          alt="Placeholder image"
+          className="card-image my-16 mx-auto block duration-200 hover:scale-105"
+        />
       </div>
     </div>
   );

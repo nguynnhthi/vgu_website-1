@@ -8,8 +8,8 @@ export default function Page() {
         <main>
             <Header />
             <HeroSection />
-            {/* <Organization /> */}
-            <Test />
+            <Organization />
+            {/* <Test /> */}
             <Footer />
         </main>
     )

@@ -52,13 +52,7 @@ export default function InquiryForm() {
                                     <h2 className="text-2xl">Main Office</h2>
                                     <p className="text-gray-400">Room 220 - Admin Building</p>
                                     <Link className="flex text-gray-400 hover:text-white" href="https://maps.app.goo.gl/q6WUUwkxcUaniPCM8">
-                                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                                        </svg> */}
-
                                         VGU Campus (Google Map)
-
                                     </Link>
                                 </div>
                             </div>

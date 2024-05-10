@@ -1,11 +1,8 @@
-import Image from 'next/image';
 import { sans } from '../ui/fonts';
-
-
 
 export default function VguPartners() {
   return (
-    <div className={`${sans.className} my-16`}>
+    <div className={`${sans.className} mb-20`}>
       <div className="mb-16">
         <h1 className="text-center text-4xl font-extrabold uppercase leading-none tracking-tight text-vgu-orange md:text-5xl lg:text-6xl">
           VGU{' '}
@@ -47,6 +44,12 @@ export default function VguPartners() {
           <li>
             <img className='w-170 h-auto' src="./heilbronn.jpg" alt="frankfurt" />
           </li>
+          <li>
+            <img className='w-170 h-auto' src="./stuttgart.jpg" alt="frankfurt" />
+          </li>
+          <li>
+            <img className='w-170 h-auto' src="./rub.jpg" alt="frankfurt" />
+          </li>
         </ul>
         <ul
           x-ref="logos"
@@ -69,6 +72,12 @@ export default function VguPartners() {
           </li>
           <li>
             <img className='w-170 h-auto' src="./heilbronn.jpg" alt="frankfurt" />
+          </li>
+          <li>
+            <img className='w-170 h-auto' src="./stuttgart.jpg" alt="frankfurt" />
+          </li>
+          <li>
+            <img className='w-170 h-auto' src="./rub.jpg" alt="frankfurt" />
           </li>
         </ul>
       </div>

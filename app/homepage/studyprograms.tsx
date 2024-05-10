@@ -16,7 +16,8 @@ export default function StudyPrograms() {
       {/* ---PROGRAMS LIST--- */}
 
       <div id="programlist" className="mx-auto grid w-9/12 grid-cols-4 gap-6 ">
-        <div className=" max-w-xs overflow-hidden rounded shadow-lg">
+
+        <div className=" max-w-xs overflow-hidden duration-200 hover:scale-105 rounded shadow-lg">
           <Image
             src="/girl1.jpeg"
             width={300}
@@ -38,7 +39,9 @@ export default function StudyPrograms() {
             </span>
           </div>
         </div>
-        <div className="max-w-xs overflow-hidden rounded shadow-lg">
+
+
+        <div className=" max-w-xs overflow-hidden duration-200 hover:scale-105 rounded shadow-lg">
           <Image
             src="/girl2.jpeg"
             width={300}
@@ -61,7 +64,7 @@ export default function StudyPrograms() {
             </span>
           </div>
         </div>
-        <div className="max-w-xs overflow-hidden rounded shadow-lg">
+        <div className=" max-w-xs overflow-hidden duration-200 hover:scale-105 rounded shadow-lg">
           <Image
             src="/girl3.jpeg"
             width={300}
@@ -83,7 +86,7 @@ export default function StudyPrograms() {
             </span>
           </div>
         </div>
-        <div className="max-w-xs overflow-hidden rounded shadow-lg">
+        <div className=" max-w-xs overflow-hidden duration-200 hover:scale-105 rounded shadow-lg">
           <Image
             src="/girl4.jpeg"
             width={300}
@@ -106,6 +109,16 @@ export default function StudyPrograms() {
           </div>
         </div>
       </div>
+      <div>
+        <Image
+          src="/dot.jpg"
+          width={100}
+          height={100}
+          alt="Placeholder image"
+          className="card-image my-16 mx-auto block duration-200 hover:scale-105"
+        />
+      </div>
+
     </div>
   );
 }

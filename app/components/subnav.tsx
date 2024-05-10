@@ -5,7 +5,7 @@ import { sans } from '../ui/fonts';
 export default function SubNav() {
   return (
     <div
-      className={`${sans.className} bg-vgu-orange mb-2 flex items-center justify-between rounded-l-lg py-1`}
+      className={`${sans.className} bg-vgu-orange mb-2 flex items-center justify-end  py-1`}
     >
       <div className="pr-4">
         <ul className="hidden text-white md:flex">

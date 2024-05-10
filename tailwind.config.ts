@@ -19,6 +19,7 @@ const config: Config = withMT({
       colors: {
         'vgu-orange': 'var(--vgu-orange)',
         'vgu-darkblue': 'var(--vgu-darkblue)',
+        'vgu-yellow': 'var(--vgu-yellow)',
       },
     },
     keyframes: {
