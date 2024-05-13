@@ -10,6 +10,11 @@ export default function CtaSection() {
           alt="VGU Campus Image"
         />
 
+        {/* <video className=" h-auto w-full brightness-75 filter" autoPlay controls loop muted >
+          <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video> */}
+
         {/* <video src="https://www.youtube.com/watch?v=aKexZlnITqg"></video> */}
         <div className="absolute inset-0 mx-auto my-auto h-32 w-auto">
           <h1 className="mb-4 text-center text-4xl font-black uppercase leading-none tracking-tight text-white md:text-5xl lg:text-6xl">
