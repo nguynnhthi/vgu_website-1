@@ -4,7 +4,25 @@ export default function HeroSection() {
   return (
 
     <div>
-      <Carousel
+
+      <Carousel transition={{ type: "tween", duration: 1 }} className="rounded-xl">
+        <img
+          src="/vgu_1.jpeg"
+          alt="image 1"
+          className="h-auto w-full object-cover"
+        />
+        <img
+          src="/vgu_1.jpeg"
+          alt="image 2"
+          className="h-auto w-full object-cover"
+        />
+        <img
+          src="/vgu_1.jpeg"
+          alt="image 3"
+          className="h-auto w-full object-cover"
+        />
+      </Carousel>
+      {/* <Carousel
         className=" h-fit mb-4"
         prevArrow={({ handlePrev }) => (
           <IconButton
@@ -71,8 +89,10 @@ export default function HeroSection() {
           alt="image 3"
           className="h-vh w-auto"
         />
-      </Carousel>
-    </div>
+      </Carousel> */}
+
+
+    </div >
 
   );
 }

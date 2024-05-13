@@ -29,15 +29,15 @@ export default function VguInFigures() {
           </div>
           <div>
             <p className="text-6xl font-semibold text-vgu-darkblue">200</p>
-            <p>millions of dollars investment in infrastructure</p>
+            <p className="text-xl">millions of dollars investment in infrastructure</p>
           </div>
           <div>
             <p className="text-6xl font-semibold text-vgu-darkblue">71</p>
-            <p>technical laboratories</p>
+            <p className="text-xl">technical laboratories</p>
           </div>
           <div>
             <p className=" text-6xl font-semibold text-vgu-darkblue">20</p>
-            <p>study programs</p>
+            <p className="text-xl">study programs</p>
           </div>
         </div>
       </div>
