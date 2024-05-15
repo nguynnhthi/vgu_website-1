@@ -31,14 +31,30 @@ export const organizationLinks = [
   { name: 'Executive Boards', path: '/organization/executiveboards' },
 
   { name: 'Falcuties', path: '/organization/falcuties' },
-  { name: 'Central Units', path: '/organization/central units' },
+  { name: 'Central Units', path: '/organization/centralunits' },
+];
+
+export const studyProgramsLinks = [
+  {
+    name: 'Mechanical Engineering',
+    path: '/studyprograms/mechanical_engineering',
+  },
+
+  {
+    name: 'Computer Science',
+    path: '/studyprograms/computer_science',
+  },
+  {
+    name: 'Electrical Engineering',
+    path: '/studyprograms/electrical_engineering',
+  },
 ];
 
 export const subNavLinks = [
   { name: 'Quick Access', path: '/' },
   {
     name: 'News & Events',
-    path: '/',
+    path: '/newsandevents',
   },
   {
     name: 'Research',

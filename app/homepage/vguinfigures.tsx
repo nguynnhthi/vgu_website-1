@@ -20,6 +20,7 @@ export default function VguInFigures() {
             alt="VGU Library Image"
             width={750}
             height={750}
+            className='rounded'
           />
         </div>
         <div className="col-span-2 mx-6 flex flex-col justify-between">

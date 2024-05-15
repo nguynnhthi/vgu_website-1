@@ -1,5 +1,24 @@
 import Image from 'next/image';
 import { sans } from '../ui/fonts';
+import Link from 'next/link';
+
+const studyProgramsData = [
+  {
+    label: "Bachelor Programs",
+    content: "Explore our bachelor programs.",
+    imageUrl: "/girl1.jpeg"
+  },
+  {
+    label: "Master Programs",
+    content: "Explore our master programs.",
+    imageUrl: "/girl2.jpeg"
+  },
+  {
+    label: "Exchange Programs",
+    content: "Explore our exchange programs.",
+    imageUrl: "/girl3.jpeg"
+  },
+];
 
 export default function StudyPrograms() {
   return (
@@ -15,99 +34,36 @@ export default function StudyPrograms() {
 
       {/* ---PROGRAMS LIST--- */}
 
-      <div id="programlist" className="mx-auto grid w-9/12 grid-cols-4 gap-6 ">
+      <div id="programlist" className="mx-auto grid w-8/12 grid-cols-3 gap-6 ">
+        {studyProgramsData.map(({ label, content, imageUrl }) => (
+          <div className=" max-w-xs overflow-hidden duration-200 hover:scale-105 rounded shadow-lg">
+            <Image
+              src={`${imageUrl}`}
+              width={300}
+              height={300}
+              alt="Placeholder image"
+              className="card-image border-b-vgu-orange block w-full border-b-2"
+            />
+            <div className="px-6 py-4">
+              <div className="mb-2 text-2xl font-bold">{label}</div>
+              <p className="text-base text-gray-700">
+                {content}
+              </p>
+            </div>
+            <div className="px-6 py-6">
+              {/* <span className=" text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase outline outline-1 duration-300 hover:text-white ">
+                Learn more
+              </span> */}
+              <Link href={`/studyprograms`}>
+                <button className=" text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase outline outline-1 duration-300 hover:text-white ">
+                  Learn more
+                </button>
+              </Link>
 
-        <div className=" max-w-xs overflow-hidden duration-200 hover:scale-105 rounded shadow-lg">
-          <Image
-            src="/girl1.jpeg"
-            width={300}
-            height={300}
-            alt="Placeholder image"
-            className="card-image border-b-vgu-orange block w-full border-b-2"
-          />
-          <div className="px-6 py-4">
-            <div className="mb-2 text-2xl font-bold">Bachelor Programs</div>
-            <p className="text-base text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
+            </div>
           </div>
-          <div className="px-6 pb-2 pt-4">
-            <span className=" text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase outline outline-1 duration-300 hover:text-white ">
-              Learn more
-            </span>
-          </div>
-        </div>
+        ))}
 
-
-        <div className=" max-w-xs overflow-hidden duration-200 hover:scale-105 rounded shadow-lg">
-          <Image
-            src="/girl2.jpeg"
-            width={300}
-            height={435}
-            alt="Placeholder image"
-            className="card-image border-b-vgu-orange block w-full border-b-2"
-          />
-          <div className="px-6 py-4">
-            <div className="mb-2 text-2xl font-bold">Master Programs</div>
-            <p className="text-base text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
-          </div>
-
-          <div className="px-6 py-6 ">
-            <span className="text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase outline outline-1 duration-300 hover:text-white ">
-              Learn more
-            </span>
-          </div>
-        </div>
-        <div className=" max-w-xs overflow-hidden duration-200 hover:scale-105 rounded shadow-lg">
-          <Image
-            src="/girl3.jpeg"
-            width={300}
-            height={435}
-            alt="Placeholder image"
-            className="card-image border-b-vgu-orange block w-full border-b-2"
-          />
-          <div className="px-6 py-4">
-            <div className="mb-2 text-2xl font-bold">Exchange Programs</div>
-            <p className="text-base text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
-          </div>
-          <div className="px-6 pb-2 pt-4">
-            <span className=" text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase outline outline-1 duration-300 hover:text-white ">
-              Learn more
-            </span>
-          </div>
-        </div>
-        <div className=" max-w-xs overflow-hidden duration-200 hover:scale-105 rounded shadow-lg">
-          <Image
-            src="/girl4.jpeg"
-            width={300}
-            height={435}
-            alt="Placeholder image"
-            className="card-image border-b-vgu-orange block w-full border-b-2"
-          />
-          <div className="px-6 py-4">
-            <div className="mb-2 text-2xl font-bold">PHD Programs</div>
-            <p className="text-base text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
-          </div>
-          <div className="px-6 pb-2 pt-4">
-            <span className=" text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase outline outline-1 duration-300 hover:text-white ">
-              Learn more
-            </span>
-          </div>
-        </div>
       </div>
       <div>
         <Image

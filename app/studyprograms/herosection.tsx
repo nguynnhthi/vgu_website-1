@@ -29,41 +29,9 @@ export default function HeroSection() {
                     </div>
                 </div>
             </div>
-            {/* Search bar */}
 
-            {/* <div className='mb-20'>
-                <form className=" bg-vgu-darkblue py-2 mx-auto rounded-lg border flex flex-row w-7/12 justify-around">
-                    <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
 
-                    <div className='basis-1/4 '>
-                        <select id="countries" name='countries' required className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
-                            <option value="" disabled selected hidden>Choose a falcuty</option>
-                            <option value="US">United States</option>
-                            <option value="CA">Canada</option>
-                            <option value="FR">France</option>
-                            <option value="DE">Germany</option>
-                        </select>
-                    </div>
-                    <div className='basis-1/4'>
-                        <select id="countries" name='countries' required className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
-                            <option value="" disabled selected hidden>Choose program level</option>
-                            <option value="US">United States</option>
-                            <option value="CA">Canada</option>
-                            <option value="FR">France</option>
-                            <option value="DE">Germany</option>
-                        </select>
-                    </div>
-                    <div className='basis-1/4'>
-                        <select id="countries" name='countries' required className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
-                            <option value="" disabled selected hidden>Search programs</option>
-                            <option value="US">United States</option>
-                            <option value="CA">Canada</option>
-                            <option value="FR">France</option>
-                            <option value="DE">Germany</option>
-                        </select>
-                    </div>
-                </form>
-            </div> */}
+
         </div>
     );
 }

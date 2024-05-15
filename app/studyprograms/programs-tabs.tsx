@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import { sans } from '../ui/fonts';
+import Link from 'next/link';
 import {
     Tabs,
     TabsHeader,
@@ -18,32 +19,36 @@ export default function ProgramTabs() {
         {
             label: "Computer Science",
             content: "Explore our undergraduate major in Computer Science.",
-            imageUrl: "/girl1.jpeg"
+            imageUrl: "/girl1.jpeg",
+            url: "computer_science"
         },
         {
             label: "Electrical Engineering",
             content: "Explore our undergraduate major in Electrical Engineering.",
-            imageUrl: "/girl2.jpeg"
+            imageUrl: "/girl2.jpeg",
+            url: "electrical_engineering"
         },
         {
             label: "Mechanical Engineering",
             content: "Explore our undergraduate major in Mechanical Engineering.",
-            imageUrl: "/girl3.jpeg"
+            imageUrl: "/girl3.jpeg",
+            url: "mechanical_engineering"
+
         },
         {
             label: "Computer Science",
             content: "Explore our undergraduate major in Computer Science.",
-            imageUrl: "/girl1.jpeg"
+            imageUrl: "/girl3.jpeg"
         },
         {
             label: "Electrical Engineering",
             content: "Explore our undergraduate major in Electrical Engineering.",
-            imageUrl: "/girl2.jpeg"
+            imageUrl: "/girl1.jpeg"
         },
         {
             label: "Mechanical Engineering",
             content: "Explore our undergraduate major in Mechanical Engineering.",
-            imageUrl: "/girl3.jpeg"
+            imageUrl: "/girl2.jpeg"
         },
 
 
@@ -52,7 +57,6 @@ export default function ProgramTabs() {
     const masterProgramsData = [
         {
             label: "Data Science",
-            value: "ds",
             content: "Explore our master's program in Data Science.",
             imageUrl: "/girl3.jpeg"
         },
@@ -112,7 +116,7 @@ export default function ProgramTabs() {
                     <TabsBody>
                         <TabPanel value="bachelor">
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                {bachelorProgramsData.map(({ label, content, imageUrl }) => (
+                                {bachelorProgramsData.map(({ label, content, imageUrl, url }) => (
                                     <div key={label}>
                                         <div className="max-w-xs overflow-hidden rounded shadow-lg duration-200 hover:scale-105 ">
                                             <div className="width-full h-auto">
@@ -130,9 +134,14 @@ export default function ProgramTabs() {
                                                 </p>
                                             </div>
                                             <div className="px-6 py-6 ">
-                                                <span className="text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase outline outline-1 duration-300 hover:text-white ">
+                                                {/* <span className="text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase outline outline-1 duration-300 hover:text-white ">
                                                     Learn more
-                                                </span>
+                                                </span> */}
+                                                <Link href={`/studyprograms/${url}`}>
+                                                    <button className="text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase outline outline-1 duration-300 hover:text-white ">
+                                                        Learn more
+                                                    </button>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

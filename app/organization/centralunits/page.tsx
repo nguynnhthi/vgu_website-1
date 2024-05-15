@@ -4,7 +4,7 @@ export default function Page() {
     return (
         <main>
             <Header />
-            <p>Excutive Boards!</p>
+            <p>Central Units!</p>
         </main>
     )
 }

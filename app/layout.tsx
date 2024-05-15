@@ -14,15 +14,9 @@ export default function RootLayout({
       </head>
       <body className={`${sans.className} antialiased`}>{children}
 
-        <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer />
-
-        <script src="../node_modules/soft-ui-dashboard/assets/css/soft-ui-dashboard.css"></script>
-
-
+        {/* <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer /> */}
 
       </body>
-
-
     </html>
   );
 }
