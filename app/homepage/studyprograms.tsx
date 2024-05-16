@@ -50,10 +50,8 @@ export default function StudyPrograms() {
                 {content}
               </p>
             </div>
-            <div className="px-6 py-6">
-              {/* <span className=" text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase outline outline-1 duration-300 hover:text-white ">
-                Learn more
-              </span> */}
+            <div className="p-6">
+
               <Link href={`/studyprograms`}>
                 <button className=" text-vgu-darkblue hover:outline-vgu-darkblue hover:bg-vgu-darkblue inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase outline outline-1 duration-300 hover:text-white ">
                   Learn more
