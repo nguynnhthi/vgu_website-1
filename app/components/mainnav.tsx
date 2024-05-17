@@ -7,11 +7,12 @@ import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 
 export default function MainNav() {
-
   const pathname = usePathname();
 
   return (
-    <div className={`${sans.className} align-middle p-6 items-center justify-between flex text-xl`}>
+    <div
+      className={`${sans.className} flex items-center justify-between p-6 align-middle text-xl`}
+    >
       <div>
         <Link href={'/homepage'}>
           {' '}
@@ -31,7 +32,9 @@ export default function MainNav() {
             <Link href={path}>
               <li
                 key={name}
-                className={clsx("nav-links link-underline align-items-middle text-vgu-darkblue hover:text-vgu-orange flex cursor-pointer px-4 font-medium capitalize duration-200 hover:scale-105")}
+                className={clsx(
+                  'nav-links link-underline align-items-middle flex cursor-pointer px-4 font-medium capitalize text-vgu-darkblue duration-200 hover:scale-105 hover:text-vgu-orange',
+                )}
               >
                 {name}
               </li>

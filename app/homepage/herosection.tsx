@@ -1,13 +1,13 @@
-"use client"
-import { Carousel } from "@material-tailwind/react";
+'use client';
+import Image from 'next/image';
+import { Carousel } from '@material-tailwind/react';
 export default function HeroSection() {
   return (
-
     <div>
-      <Carousel transition={{ type: "tween", duration: 1 }} className="rounded-xl">
+      <Carousel transition={{ type: 'tween', duration: 1 }}>
         <img
           src="/vgu_1.jpeg"
-          alt="image 1"
+          alt="image 2"
           className="h-auto w-full object-cover"
         />
         <img
@@ -21,10 +21,6 @@ export default function HeroSection() {
           className="h-auto w-full object-cover"
         />
       </Carousel>
-    </div >
-
+    </div>
   );
 }
-
-
-

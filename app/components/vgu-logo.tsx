@@ -2,12 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { sans } from '../ui/fonts';
 
-export default function VGULogo() {
+export default function VguLogo() {
   return (
     <div
       className={`${sans.className} flex flex-row items-center leading-none text-black`}
     >
-
       <Link href={'/home'}>
         {' '}
         <Image

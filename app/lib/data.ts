@@ -51,7 +51,7 @@ export const studyProgramsLinks = [
 ];
 
 export const subNavLinks = [
-  { name: 'Quick Access', path: '/' },
+  { name: 'Quick Access', path: '/quickaccess' },
   {
     name: 'News & Events',
     path: '/newsandevents',
