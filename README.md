@@ -1,5 +1,1 @@
-## Next.js App Router Course - Starter
-
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
-
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+The Vietnamese German University (VGU) website aims to serve as a comprehensive platform for students, faculty, staff, and visitors to access information about the university, its programs, events, and services. The website will be developed using Next.js for the front end to ensure optimal performance, scalability, and SEO. In contrast, Directus will be used as the headless CMS (Content Management System) to manage content efficiently.
