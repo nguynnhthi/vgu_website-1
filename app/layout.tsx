@@ -9,11 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body className={`${sans.className} antialiased`}>
-        {children}
-
-        {/* <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer /> */}
-      </body>
+      <body className={`${sans.className} antialiased`}>{children}</body>
     </html>
   );
 }

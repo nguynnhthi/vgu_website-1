@@ -1,4 +1,3 @@
-import CtaSection from '../components/virtualtour';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import StudyPrograms from './studyprograms';
