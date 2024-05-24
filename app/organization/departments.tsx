@@ -25,25 +25,25 @@ export default function Departments() {
       imageUrl: '/girl3.jpeg',
       url: 'centralunits',
     },
-    {
-      label: 'ADMISSIONS',
-      content: 'Learn about admissions at Vietnamese - German University.',
-      imageUrl: '/girl3.jpeg',
-      url: 'admission',
-    },
-    {
-      label: 'ACADEMICS',
-      content: 'Explore academic programs at Vietnamese - German University.',
-      imageUrl: '/girl1.jpeg',
-      url: 'academics',
-    },
-    {
-      label: 'RESEARCH',
-      content:
-        'Discover research opportunities at Vietnamese - German University.',
-      imageUrl: '/girl2.jpeg',
-      url: 'research',
-    },
+    // {
+    //   label: 'ADMISSIONS',
+    //   content: 'Learn about admissions at Vietnamese - German University.',
+    //   imageUrl: '/girl3.jpeg',
+    //   url: 'admission',
+    // },
+    // {
+    //   label: 'ACADEMICS',
+    //   content: 'Explore academic programs at Vietnamese - German University.',
+    //   imageUrl: '/girl1.jpeg',
+    //   url: 'academics',
+    // },
+    // {
+    //   label: 'RESEARCH',
+    //   content:
+    //     'Discover research opportunities at Vietnamese - German University.',
+    //   imageUrl: '/girl2.jpeg',
+    //   url: 'research',
+    // },
   ];
 
   return (
@@ -68,8 +68,7 @@ export default function Departments() {
                   <img
                     src={imageUrl}
                     alt="Placeholder image"
-                    className="card-imageblock h-auto w-full border-b-2
-                                                    border-b-vgu-orange"
+                    className="card-imageblock border-b-vgu-orane h-auto w-full border-b-2"
                   />
                 </div>
                 <div className="px-6 py-4">

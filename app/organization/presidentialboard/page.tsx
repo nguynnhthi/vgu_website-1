@@ -326,12 +326,12 @@ export default function Page() {
                     </div>
 
                     <div className="px-6 py-6 ">
-                      <Button
+                      <button
                         onClick={() => handleViewInfo(member)}
                         className="inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase text-vgu-darkblue outline outline-1 duration-300 hover:bg-vgu-darkblue hover:text-white hover:outline-vgu-darkblue"
                       >
                         View Bio
-                      </Button>
+                      </button>
                       <Dialog
                         open={size === 'lg'}
                         size={size || 'lg'}
@@ -349,10 +349,10 @@ export default function Page() {
                                   alt={selectedMember.name}
                                 />
                                 <div className="px-4 py-4">
-                                  <div className="mb-2 text-3xl font-bold uppercase text-vgu-darkblue">
+                                  <div className="mb-2 text-2xl font-bold uppercase text-vgu-darkblue">
                                     {selectedMember.name}
                                   </div>
-                                  <p className="h-12 text-base text-vgu-darkblue">
+                                  <p className=" h-12 text-xl text-vgu-darkblue">
                                     {selectedMember.position}
                                   </p>
                                   <hr className="my-4 h-px border-0 bg-vgu-darkblue"></hr>
@@ -364,7 +364,7 @@ export default function Page() {
                                 </div>
                               </div>
 
-                              <div className="col-span-5">
+                              <div className="col-span-5 font-normal">
                                 <div className="mb-4">
                                   <p>{selectedMember.bio}</p>
                                 </div>
