@@ -9,10 +9,6 @@ const config: Config = withMT({
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['"IBM Plex Sans"', 'sans-serif'],
-      },
-
       gridTemplateColumns: {
         '13': 'repeat(13, minmax(0, 1fr))',
       },
