@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 
 export default function MainNav() {
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
   return (
     <div
@@ -19,7 +19,7 @@ export default function MainNav() {
           <Image
             src="/vgu-logo.png"
             width={261}
-            height={89}
+            height={75}
             className="hidden md:block"
             alt="VGU Logo"
           />
