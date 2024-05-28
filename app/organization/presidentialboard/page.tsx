@@ -411,6 +411,103 @@ export default function Page() {
               &nbsp;Office
             </h1>
           </div>
+          <div className="mx-auto w-8/12">
+            <div className="grid grid-cols-1 gap-6 rounded pb-6 md:grid-cols-2 lg:grid-cols-3">
+              {presidentialBoardData.map((member) => (
+                <div key={member.name}>
+                  <div className="overflow-hidden rounded shadow-lg duration-200 hover:scale-105 ">
+                    <div className="border-b-2 border-b-vgu-orange object-cover shadow-lg">
+                      <Image
+                        src={`${member.imageUrl}`}
+                        width={400}
+                        height={200}
+                        alt={member.name}
+                      />
+                    </div>
+                    <div className="px-6 py-4">
+                      <div className="mb-2 text-2xl font-bold">
+                        {member.name}
+                      </div>
+                      <p className="h-12 text-base text-gray-700">
+                        {member.position}
+                      </p>
+                    </div>
+
+                    <div className="px-6 py-6 ">
+                      <button
+                        onClick={() => handleViewInfo(member)}
+                        className="inline-block rounded-full bg-white px-3 py-2 text-sm font-semibold uppercase text-vgu-darkblue outline outline-1 duration-300 hover:bg-vgu-darkblue hover:text-white hover:outline-vgu-darkblue"
+                      >
+                        View Bio
+                      </button>
+                      <Dialog
+                        open={size === 'lg'}
+                        size={size || 'lg'}
+                        handler={handleOpen}
+                      >
+                        <DialogBody>
+                          {selectedMember && (
+                            <div className="m-4 grid grid-flow-row-dense grid-cols-8 gap-8">
+                              <div className="col-span-3">
+                                <Image
+                                  className="rounded"
+                                  src={`${selectedMember.imageUrl}`}
+                                  width={350}
+                                  height={200}
+                                  alt={selectedMember.name}
+                                />
+                                <div className="px-4 py-4">
+                                  <div className="mb-2 text-2xl font-bold uppercase text-vgu-darkblue">
+                                    {selectedMember.name}
+                                  </div>
+                                  <p className=" h-12 text-xl text-vgu-darkblue">
+                                    {selectedMember.position}
+                                  </p>
+                                  <hr className="my-4 h-px border-0 bg-vgu-darkblue"></hr>
+
+                                  <div className="flex flex-col text-vgu-darkblue">
+                                    <p>Email: {selectedMember.email}</p>
+                                    <p>Tel: {selectedMember.phone}</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="col-span-5 font-normal">
+                                <div className="mb-4">
+                                  <p>{selectedMember.bio}</p>
+                                </div>
+                                <div className="mb-4">
+                                  <h1 className="text-2xl font-bold uppercase text-vgu-orange">
+                                    Academic Achievements
+                                  </h1>
+                                  <p>
+                                    {selectedMember.achievements.map(
+                                      (achievement, index) => (
+                                        <span key={index}>
+                                          - {achievement}
+                                          <br />
+                                        </span>
+                                      ),
+                                    )}
+                                  </p>
+                                </div>
+                                <div className="mb-4">
+                                  <h1 className="text-2xl font-bold uppercase text-vgu-orange">
+                                    Professional History
+                                  </h1>
+                                  <p>{selectedMember.history}</p>
+                                </div>
+                              </div>
+                            </div>
+                          )}
+                        </DialogBody>
+                      </Dialog>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </main>
