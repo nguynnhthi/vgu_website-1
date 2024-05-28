@@ -1,6 +1,8 @@
+'use client';
+import React from 'react';
+import CountUp from 'react-countup';
 import Image from 'next/image';
 import { sans } from '../ui/fonts';
-import React from 'react';
 
 export default function VguInFigures() {
   const VguNumbersData = [
@@ -25,6 +27,7 @@ export default function VguInFigures() {
       desc: 'study programs',
     },
   ];
+
   return (
     <div className={`${sans.className}`}>
       <div className="mb-12 ">
@@ -49,34 +52,20 @@ export default function VguInFigures() {
         <div className="col-span-2 mx-6 flex flex-col justify-between">
           {VguNumbersData.map((item, index) => (
             <div key={index}>
-              <p className="text-6xl font-semibold text-vgu-darkblue">
-                {item.number}
-              </p>
+              <CountUp
+                start={0}
+                end={item.number}
+                delay={0}
+                duration={3}
+                enableScrollSpy={true}
+                scrollSpyOnce={false}
+                className="text-6xl font-semibold text-vgu-darkblue"
+              />
               <p className="text-xl">{item.desc}</p>
             </div>
           ))}
-
-          {/* <div>
-            <p className="text-6xl font-semibold text-vgu-darkblue">1700</p>
-            <p className="text-xl">approximate number of students</p>
-          </div>
-          <div>
-            <p className="text-6xl font-semibold text-vgu-darkblue">200</p>
-            <p className="text-xl">
-              millions of dollars investment in infrastructure
-            </p>
-          </div>
-          <div>
-            <p className="text-6xl font-semibold text-vgu-darkblue">71</p>
-            <p className="text-xl">technical laboratories</p>
-          </div>
-          <div>
-            <p className=" text-6xl font-semibold text-vgu-darkblue">20</p>
-            <p className="text-xl">study programs</p>
-          </div> */}
         </div>
       </div>
-
       <div>
         <Image
           src="/dot.jpg"
