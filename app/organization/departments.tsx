@@ -68,8 +68,7 @@ export default function Departments() {
                   <img
                     src={imageUrl}
                     alt="Placeholder image"
-                    className="card-imageblock h-auto w-full border-b-2
-                                                    border-b-vgu-orange"
+                    className="card-imageblock h-auto w-full border-b-2 border-b-vgu-orange"
                   />
                 </div>
                 <div className="px-6 py-4">

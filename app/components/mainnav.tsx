@@ -11,7 +11,7 @@ export default function MainNav() {
 
   return (
     <div
-      className={`${sans.className} flex items-center justify-between p-6 align-middle text-xl`}
+      className={`${sans.className}  flex h-auto w-full items-center justify-between p-6 align-middle text-xl`}
     >
       <div>
         <Link href={'/homepage'}>
@@ -29,6 +29,7 @@ export default function MainNav() {
       <div>
         <ul className="hidden md:flex">
           {navLinks.map(({ name, path }) => (
+            // eslint-disable-next-line react/jsx-key
             <Link href={path}>
               <li
                 key={name}

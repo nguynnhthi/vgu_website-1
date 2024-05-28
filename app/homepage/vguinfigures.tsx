@@ -1,7 +1,30 @@
 import Image from 'next/image';
 import { sans } from '../ui/fonts';
+import React from 'react';
 
 export default function VguInFigures() {
+  const VguNumbersData = [
+    {
+      label: 'Student numbers',
+      number: 1700,
+      desc: 'Vietnamese - German University is governed by the executive board',
+    },
+    {
+      label: 'Investment in infrastructure',
+      number: 200,
+      desc: 'millions of dollars investment in infrastructure',
+    },
+    {
+      label: 'Technical laboratories',
+      number: 71,
+      desc: 'technical laboratories',
+    },
+    {
+      label: 'Study programs',
+      number: 20,
+      desc: 'study programs',
+    },
+  ];
   return (
     <div className={`${sans.className}`}>
       <div className="mb-12 ">
@@ -24,7 +47,16 @@ export default function VguInFigures() {
           />
         </div>
         <div className="col-span-2 mx-6 flex flex-col justify-between">
-          <div>
+          {VguNumbersData.map((item, index) => (
+            <div key={index}>
+              <p className="text-6xl font-semibold text-vgu-darkblue">
+                {item.number}
+              </p>
+              <p className="text-xl">{item.desc}</p>
+            </div>
+          ))}
+
+          {/* <div>
             <p className="text-6xl font-semibold text-vgu-darkblue">1700</p>
             <p className="text-xl">approximate number of students</p>
           </div>
@@ -41,7 +73,7 @@ export default function VguInFigures() {
           <div>
             <p className=" text-6xl font-semibold text-vgu-darkblue">20</p>
             <p className="text-xl">study programs</p>
-          </div>
+          </div> */}
         </div>
       </div>
 

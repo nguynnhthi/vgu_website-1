@@ -86,3 +86,14 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+
+export type PresidentialBoardMember = {
+  name: string;
+  position: string;
+  imageUrl: string;
+  email: string;
+  phone: string;
+  bio: string;
+  achievements: string[];
+  history: string;
+};

@@ -10,14 +10,14 @@ import VirtualTour from '../components/virtualtour';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col">
-      <Header />
+      {/* <Header /> */}
       <HeroSection />
       <StudyPrograms />
       <VguInFigures />
       <VguToday />
       <VguPartners />
       <VirtualTour />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }

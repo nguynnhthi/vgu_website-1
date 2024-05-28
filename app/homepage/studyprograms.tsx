@@ -36,7 +36,10 @@ export default function StudyPrograms() {
 
       <div id="programlist" className="mx-auto grid w-8/12 grid-cols-3 gap-6 ">
         {studyProgramsData.map(({ label, content, imageUrl }) => (
-          <div className=" max-w-xs overflow-hidden rounded shadow-lg duration-200 hover:scale-105">
+          <div
+            key={label}
+            className=" max-w-xs overflow-hidden rounded shadow-lg duration-200 hover:scale-105"
+          >
             <Image
               src={`${imageUrl}`}
               width={300}

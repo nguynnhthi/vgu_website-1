@@ -1,5 +1,7 @@
 import '@/app/ui/global.css';
 import { sans } from './ui/fonts';
+import Footer from './components/footer';
+import Header from './components/header';
 
 export default function RootLayout({
   children,
@@ -9,7 +11,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body className={`${sans.className} antialiased`}>{children}</body>
+      <body className={`${sans.className} antialiased`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

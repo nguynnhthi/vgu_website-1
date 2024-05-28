@@ -10,13 +10,13 @@ import Footer from '../components/footer';
 export default function Page() {
   return (
     <main>
-      <Header />
+      {/* <Header /> */}
       <HeroSection />
       {/* <Test /> */}
       <ProgramTabs />
       <InquiryForm />
       <VguPartners />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
