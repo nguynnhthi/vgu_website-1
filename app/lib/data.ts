@@ -11,8 +11,7 @@ import {
 import { formatCurrency } from './utils';
 
 export const navLinks = [
-  { name: 'Study Programs', path: '/studyprograms' },
-
+  { name: 'Study Programs', path: '/' },
   {
     name: 'Organization',
     path: '/organization',
@@ -27,34 +26,11 @@ export const navLinks = [
   },
 ];
 
-export const organizationLinks = [
-  { name: 'Executive Boards', path: '/organization/executiveboards' },
-
-  { name: 'Falcuties', path: '/organization/falcuties' },
-  { name: 'Central Units', path: '/organization/centralunits' },
-];
-
-export const studyProgramsLinks = [
-  {
-    name: 'Mechanical Engineering',
-    path: '/studyprograms/mechanical_engineering',
-  },
-
-  {
-    name: 'Computer Science',
-    path: '/studyprograms/computer_science',
-  },
-  {
-    name: 'Electrical Engineering',
-    path: '/studyprograms/electrical_engineering',
-  },
-];
-
 export const subNavLinks = [
-  { name: 'Quick Access', path: '/quickaccess' },
+  { name: 'Quick Access', path: '/' },
   {
     name: 'News & Events',
-    path: '/newsandevents',
+    path: '/',
   },
   {
     name: 'Research',

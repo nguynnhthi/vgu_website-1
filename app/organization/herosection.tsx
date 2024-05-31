@@ -1,11 +1,12 @@
 import { sans } from '../ui/fonts';
+import directus from '@/lib/directus';
 export default function HeroSection() {
     return (
 
         <div className={`${sans.className}`}>
             <div className="relative max-w-full mb-8">
                 <img
-                    src="/vgu_organization.png"
+                    src={`${directus.url}assets/cf12b9ca-d322-4dcc-9666-e527398704c8`}
                     className="w-full h-full brightness-75 filter"
                     alt="VGU Organization"
                 />

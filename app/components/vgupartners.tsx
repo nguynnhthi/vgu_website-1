@@ -1,11 +1,14 @@
+import Image from 'next/image';
 import { sans } from '../ui/fonts';
+import directus from '@/lib/directus';
+import { getPartnerLogos } from '../lib/utils';
 
-export default function VguPartners() {
+
+export default async function VguPartners() {
+  const logos = await getPartnerLogos('4867b831-42f6-4fd8-b170-7feb7c294016');
+  
   return (
-
-    <div className={`${sans.className} mb-20`}>
-
-
+    <div className={`${sans.className} my-16`}>
       <div className="mb-16">
         <h1 className="text-center text-4xl font-extrabold uppercase leading-none tracking-tight text-vgu-orange md:text-5xl lg:text-6xl">
           VGU{' '}
@@ -24,67 +27,19 @@ export default function VguPartners() {
         })"
         className="inline-flex w-full flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
       >
-
-        <ul
-
-          x-ref="logos"
-          className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8"
-        >
-          <li>
-            <img className='w-170 h-auto' src="./frankfurt.jpg" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./darmstadt.jpg" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./karlsruhe.png" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./hfu.jpg" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./goethe.jpg" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./heilbronn.jpg" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./stuttgart.jpg" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./rub.jpg" alt="frankfurt" />
-          </li>
-        </ul>
-
+        
 
         <ul
           x-ref="logos"
           className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8"
         >
-          <li>
-            <img className='w-170 h-auto' src="./frankfurt.jpg" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./darmstadt.jpg" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./karlsruhe.png" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./hfu.jpg" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./goethe.jpg" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./heilbronn.jpg" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./stuttgart.jpg" alt="frankfurt" />
-          </li>
-          <li>
-            <img className='w-170 h-auto' src="./rub.jpg" alt="frankfurt" />
-          </li>
+          {logos.images.map((logo: any) => {
+            return (
+              <li>
+                <img className='w-170 h-150' src={`${directus.url}assets/${logo.directus_files_id}`} alt="frankfurt" />
+              </li>
+            )
+          })}
         </ul>
       </div>
     </div>
