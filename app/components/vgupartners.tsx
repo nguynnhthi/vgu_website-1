@@ -36,7 +36,7 @@ export default async function VguPartners() {
           {logos.images.map((logo: any) => {
             return (
               <li>
-                <img className='w-170 h-150' src={`${directus.url}assets/${logo.directus_files_id}`} alt="frankfurt" />
+                <Image height={300} width={300} className='w-170 h-150' src={`${directus.url}assets/${logo.directus_files_id}`} alt="frankfurt" />
               </li>
             )
           })}

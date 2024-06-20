@@ -9,6 +9,7 @@ import {
     Tab,
     TabPanel,
 } from "@material-tailwind/react";
+import Image from "next/image";
 
 
 export default function ProgramTabs() {
@@ -120,7 +121,7 @@ export default function ProgramTabs() {
                                     <div key={label}>
                                         <div className="max-w-xs overflow-hidden rounded shadow-lg duration-200 hover:scale-105 ">
                                             <div className="width-full h-auto">
-                                                <img
+                                                <Image
                                                     src={imageUrl}
                                                     alt="Placeholder image"
                                                     className="card-imageblock border-b-vgu-orange
@@ -160,7 +161,7 @@ export default function ProgramTabs() {
                                     <div key={label}>
                                         <div className="max-w-xs overflow-hidden rounded shadow-lg duration-200 hover:scale-105">
                                             <div className="width-full h-auto overflow-hidden">
-                                                <img
+                                                <Image
                                                     src={imageUrl}
                                                     alt="Placeholder image"
                                                     className="card-image block w-full border-b-vgu-orange

@@ -33,8 +33,10 @@ export default async function Departments() {
                         <div key={item.id}>
                             <div className="overflow-hidden rounded shadow-lg duration-200 hover:scale-105 ">
                                 <div className="width-full h-auto shadow-lg">
-                                    <img
+                                    <Image
                                         src={`${directus.url}assets/${item.thumbnail.filename_disk}`}
+                                        height={533}
+                                        width={800}
                                         alt="Placeholder image"
                                         className="card-imageblock w-full h-auto border-b-vgu-orange
                                                     border-b-2"

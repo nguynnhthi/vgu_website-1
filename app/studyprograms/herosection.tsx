@@ -1,5 +1,6 @@
 import { sans } from '../ui/fonts';
 import directus from '@/lib/directus';
+import Image from 'next/image';
 export default function HeroSection() {
 
 
@@ -7,8 +8,10 @@ export default function HeroSection() {
 
         <div className={`${sans.className}`}>
             <div className="relative max-w-full mb-8">
-                <img
+                <Image
                     src={`${directus.url}assets/fca24a6d-c6cc-406a-aab3-fdbdb39a2e3b`}
+                    height={1004}
+                    width={1924}
                     className="w-full h-full brightness-75 filter"
                     alt="VGU Campus Image"
                 />

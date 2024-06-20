@@ -60,8 +60,8 @@ export default function DepartmentClient({ membersData, childDeptData }: { membe
                                         <div className="border-b-2 border-b-vgu-orange object-cover shadow-lg">
                                             <Image
                                                 src={`${directus.url}assets/${member.item.avatar.filename_disk}`}
-                                                width={200}
-                                                height={400}
+                                                width={400}
+                                                height={200}
                                                 alt={member.item.full_name}
                                             />
 
@@ -143,8 +143,10 @@ export default function DepartmentClient({ membersData, childDeptData }: { membe
                         <div key={item.id}>
                             <div className="overflow-hidden rounded shadow-lg duration-200 hover:scale-105 ">
                                 <div className="width-full h-auto shadow-lg">
-                                    <img
+                                    <Image
                                         src={`${directus.url}assets/${item.thumbnail.filename_disk}`}
+                                        height={533}
+                                        width={800}
                                         alt="Placeholder image"
                                         className="card-imageblock w-full h-auto border-b-vgu-orange
                                                     border-b-2"

@@ -1,6 +1,7 @@
 'use client'
 import { Carousel } from "@material-tailwind/react";
 import directus from "@/lib/directus";
+import Image from "next/image";
 
 export default function HeroSection({ carouselData }: { carouselData: any }) {
   if (!carouselData) {
@@ -17,8 +18,10 @@ export default function HeroSection({ carouselData }: { carouselData: any }) {
             return null;
           }
           return (
-            <img
+            <Image
               key={item.carousel_image_id.image.filename_disk}
+              height={799}
+              width={1761}
               src={`${directus.url}assets/${item.carousel_image_id.image.filename_disk}`}
               className="h-auto w-full object-cover"
               alt="carousel image"

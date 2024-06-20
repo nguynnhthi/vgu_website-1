@@ -10,6 +10,7 @@ import {
     TabPanel,
 } from "@material-tailwind/react";
 import directus from '@/lib/directus';
+import Image from "next/image";
 
 
 export default function ProgramTabs2({ bachelor_programs, master_programs }: { bachelor_programs: any; master_programs: any }) {
@@ -50,8 +51,10 @@ export default function ProgramTabs2({ bachelor_programs, master_programs }: { b
                                     <div key={item.id}>
                                         <div className="max-w-xs overflow-hidden rounded shadow-lg duration-200 hover:scale-105 ">
                                             <div className="width-full h-auto">
-                                                <img
+                                                <Image
                                                     src={`${directus.url}assets/${item.thumbnail.filename_disk}`}
+                                                    height={528}
+                                                    width={800}
                                                     alt="Placeholder image"
                                                     className="card-imageblock border-b-vgu-orange
                                                     border-b-2"
@@ -90,9 +93,11 @@ export default function ProgramTabs2({ bachelor_programs, master_programs }: { b
                                     <div key={item.id}>
                                         <div className="max-w-xs overflow-hidden rounded shadow-lg duration-200 hover:scale-105">
                                             <div className="width-full h-auto overflow-hidden">
-                                                <img
+                                                <Image
                                                     src={`${directus.url}assets/${item.thumbnail.filename_disk}`}
                                                     alt="Placeholder image"
+                                                    height={528}
+                                                    width={800}
                                                     className="card-image block w-full border-b-vgu-orange
                                                     border-b-2"
                                                 />

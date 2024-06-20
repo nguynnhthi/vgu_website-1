@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
           {
             protocol: 'http',
-            hostname: 'localhost',
+            hostname: 'directus',
             port: '8055',
             pathname: '/assets/**',
           },

@@ -14,13 +14,13 @@ export default function Page() {
     return(
         <main className="flex min-h-screen flex-col">
             <Header/>
-            {/* <ServerHeroSection id="landing-page-carousel"/>
+            <ServerHeroSection id="landing-page-carousel"/>
             <StudyPrograms />
             <VguInFigures />
             <VguToday />
             <VguPartners />
             <CtaSection />
-            <Footer /> */}
+            <Footer />
             <p>Hello World</p>
         </main>
     )
